@@ -1,5 +1,4 @@
 FROM golang:1.13.4-alpine3.10
-WORKDIR /app
 RUN apk update && apk upgrade  -U -a && \
     apk add bash git openssh gcc libc-dev
 RUN apk add --update --no-cache gcc g++ make libc6-compat
